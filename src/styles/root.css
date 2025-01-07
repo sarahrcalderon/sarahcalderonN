@@ -1,0 +1,67 @@
+@import url('./tradutor.css');
+
+:root {
+  --roxo-neon: #9b4d96;
+  --rosa-neon: #ff0099;
+  --preto: #1f2020;
+  --azul-eletrico: #00d2ff;
+  --turquesa: #00c3c3;
+  --verde-neon: #39ff14;
+  --branco: #f2f2f2;
+  --cinza: #a8a8a8;
+  --cinza-medio: #777777;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  transition: background 0.3s, color 0.3s; 
+}
+
+/* Tema Claro */
+body.light-theme {
+  background: linear-gradient(135deg, var(--branco) 100%, #fffefe 50%, #ebebeb 20%);
+  color: var(--preto);
+}
+
+body.light-theme .header {
+  background-color: var(--branco);
+}
+
+body.light-theme a {
+  color: var(--cinza-medio);
+}
+
+/* Tema Escuro */
+body.dark-theme {
+  background: linear-gradient(135deg, var(--preto) 100%, #111111 50%, #222 20%);
+  color: var(--branco);
+}
+
+body.dark-theme .header {
+  background-color: var(--preto);
+}
+
+body.dark-theme a {
+  color: var(--branco);
+}
+
+a:hover {
+  color: var(--rosa-neon);
+}
+
+/* Botão de alternância */
+.temaBtn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.temaBtn i {
+  transition: transform 0.3s ease;
+}
+
+body.dark-theme .temaBtn i {
+  transform: rotate(180deg); 
+}

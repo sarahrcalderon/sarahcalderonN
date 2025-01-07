@@ -1,0 +1,37 @@
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito';
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 20%;
+}
+
+#typing-text::after {
+  content: '|';
+  display: inline-block;
+  opacity: 1;
+  color: var(--preto);
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@media (max-width: 768px) {
+  .sobre {
+    margin-top: 30%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre {
+    margin-top: 40%;
+    font-size: 1.1rem;
+  }
+}
