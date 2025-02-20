@@ -1,11 +1,13 @@
 .sobre {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: 'Nunito';
   font-size: 1.3rem;
   text-align: center;
   margin-top: 20%;
+  gap: 10px;
 }
 
 #typing-text::after {

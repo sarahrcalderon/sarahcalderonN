@@ -14,12 +14,17 @@
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  transition: background 0.3s, color 0.3s; 
+  transition: background 0.3s, color 0.3s;
 }
 
 /* Tema Claro */
 body.light-theme {
-  background: linear-gradient(135deg, var(--branco) 100%, #fffefe 50%, #ebebeb 20%);
+  background: linear-gradient(
+    135deg,
+    var(--branco) 100%,
+    #fffefe 50%,
+    #ebebeb 20%
+  );
   color: var(--preto);
 }
 
@@ -53,6 +58,8 @@ a:hover {
 .temaBtn {
   background: none;
   border: none;
+  margin-top: 15px;
+  margin-left: 20px;
   font-size: 24px;
   color: inherit;
   cursor: pointer;
@@ -63,5 +70,5 @@ a:hover {
 }
 
 body.dark-theme .temaBtn i {
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
 }

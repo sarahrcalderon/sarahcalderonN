@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  
-
   typeEffect();
 });
 
