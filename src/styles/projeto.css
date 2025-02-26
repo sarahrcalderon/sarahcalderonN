@@ -127,6 +127,20 @@
   border-radius: 8px;
 }
 
+.descricaoLink {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: var(--cinza-medio);
+}
+
+.descricaoLink a {
+  color: var(--cinza-medio);
+}
+
+.descricaoLink a:hover {
+  color: var(--rosa-neon);
+}
+
 @media (max-width: 768px) {
   .projeto {
     padding: 20px;
