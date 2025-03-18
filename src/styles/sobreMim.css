@@ -1,0 +1,133 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+h1 {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 span {
+  background: linear-gradient(45deg, #ff007f, #ee1959, #ff007f, #fc1258);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(150%);
+  }
+}
+
+.containerPalavras {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', Arial, sans-serif;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding-top: 450px;
+  margin: 0 auto;
+}
+
+.frase {
+  font-size: 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.ListaPalavras {
+  display: flex;
+  font-family: 'Montserrat', Arial, sans-serif;
+  flex-direction: column;
+  position: relative;
+  height: 100px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.ListaPalavras::-webkit-scrollbar {
+  display: none;
+}
+
+.palavra {
+  scroll-snap-align: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.palavra span {
+  color: rgba(27, 27, 27, 0.705);
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Cores diferentes para cada palavra */
+.palavra:nth-child(1) {
+  color: #ff007f;
+  font-size: 5rem;
+}
+.palavra:nth-child(2) {
+  color: #3cff00;
+  font-size: 5rem;
+}
+.palavra:nth-child(3) {
+  color: #f530ca;
+  font-size: 5rem;
+}
+.palavra:nth-child(4) {
+  color: #ffbb00;
+  font-size: 5rem;
+}
+.palavra:nth-child(5) {
+  color: #7f00ff;
+  font-size: 5rem;
+}
+.palavra:nth-child(6) {
+  color: #ff7f00;
+  font-size: 5rem;
+}
+.palavra:nth-child(7) {
+  color: #ff0000;
+  font-size: 5rem;
+}
+.palavra:nth-child(8) {
+  color: #00ff00;
+  font-size: 5rem;
+}
+.palavra:nth-child(9) {
+  color: #ff007f;
+  font-size: 5rem;
+}
+.palavra:nth-child(10) {
+  color: #ff7f00;
+  font-size: 5rem;
+}
+.palavra:nth-child(11) {
+  color: #ff007f;
+  font-size: 5rem;
+}
+.palavra:nth-child(12) {
+  color: #7f00ff;
+  font-size: 5rem;
+}
+.palavra:nth-child(13) {
+  color: #ff0000;
+  font-size: 5rem;
+}

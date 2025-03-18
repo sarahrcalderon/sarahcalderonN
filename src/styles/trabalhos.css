@@ -5,24 +5,19 @@
 }
 
 .trabalhos {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
   align-items: center;
   gap: 20px;
   padding: 20px;
   margin-top: 22%;
 }
-.trabalho {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
 
 .card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: stretch;
   align-items: center;
   width: 90%;
   max-width: 800px;
