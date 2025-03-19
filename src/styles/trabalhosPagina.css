@@ -1,0 +1,60 @@
+/* html,body{
+  width: 100%;
+  height: 100%;
+} */
+
+.containerTrabalhosPagina {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--cinza);
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+
+  &:hover {
+    flex: 7;
+  }
+}
+
+.item-1 {
+  background-image: url('../assets/images/botanik1.png');
+  background-size: cover;
+}
+.item-2 {
+  background-image: url('../assets/images/botanik2.png');
+  background-size: cover;
+}
+.item-3 {
+  background-image: url('../assets/images/designUi.png');
+  background-size: cover;
+}
+.item-4 {
+  background-image: url('../assets/images/coletaCalendario.png');
+  background-size: cover;
+}
+.item-5 {
+  background-image: url('../assets/images/colorpicker.png');
+  background-size: cover;
+}
