@@ -90,8 +90,13 @@ body.dark-theme .card-texto p {
 }
 
 @media (max-width: 768px) {
+  .trabalhos {
+    grid-template-columns: 1fr;
+    margin-top: 10%;
+  }
+
   .card {
-    flex-direction: column;
+    width: 100%;
     max-width: 100%;
   }
 
