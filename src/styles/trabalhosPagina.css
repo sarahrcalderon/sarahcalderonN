@@ -1,26 +1,23 @@
-/* html,body{
-  width: 100%;
-  height: 100%;
-} */
-
 .containerTrabalhosPagina {
-  padding: 75px 0;
+  padding: 75px 5%;
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
 }
 
 h1 {
   position: relative;
   margin-bottom: 45px;
   font-family: 'Oswald', sans-serif;
-  font-size: 3rem;
-  text-transform: uppercase;
+  font-size: 2rem;
   color: var(--cinza);
+  text-align: center;
 }
 
 .gallery-wrap {
   display: flex;
   flex-direction: row;
+  visibility: visible;
   width: 100%;
   height: 70vh;
 }
@@ -30,31 +27,113 @@ h1 {
   height: 100%;
   background-position: center;
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   transition: flex 0.8s ease;
+}
 
-  &:hover {
-    flex: 7;
-  }
+.item:hover {
+  flex: 7;
 }
 
 .item-1 {
   background-image: url('../assets/images/botanik1.png');
-  background-size: cover;
 }
 .item-2 {
   background-image: url('../assets/images/botanik2.png');
-  background-size: cover;
 }
 .item-3 {
   background-image: url('../assets/images/designUi.png');
-  background-size: cover;
 }
 .item-4 {
   background-image: url('../assets/images/coletaCalendario.png');
-  background-size: cover;
 }
 .item-5 {
   background-image: url('../assets/images/colorpicker.png');
-  background-size: cover;
+}
+
+.download-list {
+  margin-top: 50px;
+  text-align: center;
+}
+.download-list span {
+  background: linear-gradient(45deg, #ff007f, #ee1959, #ff007f, #fc1258);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: neonGlow 1.5s infinite alternate;
+}
+
+.download-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.download-list li {
+  background: var(--pretoMedio);
+  padding: 15px 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+.download-list li:hover {
+  background: var(--azul);
+}
+
+.download-list a {
+  text-decoration: none;
+  color: var(--cinza);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.download-list a::before {
+  content: '\1F4DD';
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .gallery-wrap {
+    height: 60vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: auto;
+  }
+  .item {
+    height: 20vh;
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerTrabalhosPagina {
+    padding: 50px 3%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .gallery-wrap {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .item {
+    height: 15vh;
+    min-height: 120px;
+  }
 }

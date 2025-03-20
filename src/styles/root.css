@@ -4,12 +4,14 @@
   --roxo-neon: #9b4d96;
   --rosa-neon: #ff0099;
   --preto: #1f2020;
+  --pretoMedio: #292929;
   --azul-eletrico: #00d2ff;
   --turquesa: #00c3c3;
   --verde-neon: #39ff14;
   --branco: #f2f2f2;
   --brancoMedio: #ececec;
   --cinza: #a8a8a8;
+  --cinzaMedioM: #d1cece;
   --cinza-medio: #777777;
 }
 
@@ -34,7 +36,11 @@ body.light-theme .header {
 }
 
 body.light-theme a {
-  color: var(--cinza-medio);
+  color: var(--cinzaMedioM);
+}
+body.light-theme .download-list li {
+  background: var(--cinza-medio);
+  color: var(--preto);
 }
 
 /* Tema Escuro */
@@ -42,7 +48,10 @@ body.dark-theme {
   background: linear-gradient(135deg, var(--preto) 100%, #111111 50%, #222 20%);
   color: var(--branco);
 }
-
+body.dark-theme .download-list li {
+  background: var(--pretoMedio);
+  color: var(--branco);
+}
 body.dark-theme .header {
   background-color: var(--preto);
 }
