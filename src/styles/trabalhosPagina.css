@@ -86,7 +86,7 @@ h1 {
 
 .download-list a {
   text-decoration: none;
-  color: var(--cinza);
+  color: var(--cinzaMedio);
   font-weight: bold;
   display: flex;
   align-items: center;
